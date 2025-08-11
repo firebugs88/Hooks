@@ -1,0 +1,87 @@
+
+--- Hook execution attempt ---
+Script: C:\Users\User\Desktop\pruebas-hooks\.claude\generate_test.py
+Args: ['C:\\Users\\User\\Desktop\\pruebas-hooks\\.claude\\generate_test.py']
+Stdin data: ''
+No input data - creating test based on recent Python file creation
+Processing latest Python file: C:\Users\User\Desktop\pruebas-hooks\test_final.py
+Skipping test file: test_final.py
+
+--- Hook execution attempt ---
+Script: C:\Users\User\Desktop\pruebas-hooks\.claude\generate_test.py
+Args: ['C:\\Users\\User\\Desktop\\pruebas-hooks\\.claude\\generate_test.py']
+Stdin data: ''
+No input data - creating test based on recent Python file creation
+Processing latest Python file: C:\Users\User\Desktop\pruebas-hooks\test_final.py
+Skipping test file: test_final.py
+
+--- Hook execution attempt ---
+Script: C:\Users\User\Desktop\pruebas-hooks\.claude\generate_test.py
+Args: ['C:\\Users\\User\\Desktop\\pruebas-hooks\\.claude\\generate_test.py']
+Stdin data: ''
+No input data - creating test based on recent Python file creation
+Processing latest Python file: C:\Users\User\Desktop\pruebas-hooks\math_operations.py
+Found functions: ['divide', 'multiply', 'process'], classes: ['MathProcessor']
+Successfully generated test file: C:\Users\User\Desktop\pruebas-hooks\tests\test_math_operations.py
+
+--- Hook execution attempt ---
+Script: C:\Users\User\Desktop\pruebas-hooks\.claude\generate_test.py
+Args: ['C:\\Users\\User\\Desktop\\pruebas-hooks\\.claude\\generate_test.py']
+Stdin data: '{"session_id":"a23d4aa3-0161-4003-a992-023601ef134d","transcript_path":"C:\\\\Users\\\\User\\\\.claude\\\\projects\\\\C--Users-User-Desktop-pruebas-hooks\\\\a23d4aa3-0161-4003-a992-023601ef134d.jsonl","cwd":"C:\\\\Users\\\\User\\\\Desktop\\\\pruebas-hooks","hook_event_name":"PostToolUse","tool_name":"Write","tool_input":{"file_path":"C:\\\\Users\\\\User\\\\Desktop\\\\pruebas-hooks\\\\primo.py","content":"def es_primo(numero):\\n    if numero < 2:\\n        return False\\n    \\n    for i in range(2, int(numero ** 0.5) + 1):\\n        if numero % i == 0:\\n            return False\\n    \\n    return True\\n\\ndef main():\\n    try:\\n        num = int(input(\\"Ingresa un nÃºmero: \\"))\\n        if es_primo(num):\\n            print(f\\"{num} es primo\\")\\n        else:\\n            print(f\\"{num} no es primo\\")\\n    except ValueError:\\n        print(\\"Por favor, ingresa un nÃºmero vÃ¡lido\\")\\n\\nif __name__ == \\"__main__\\":\\n    main()"},"tool_response":{"type":"create","filePath":"C:\\\\Users\\\\User\\\\Desktop\\\\pruebas-hooks\\\\primo.py","content":"def es_primo(numero):\\n    if numero < 2:\\n        return False\\n    \\n    for i in range(2, int(numero ** 0.5) + 1):\\n        if numero % i == 0:\\n            return False\\n    \\n    return True\\n\\ndef main():\\n    try:\\n        num = int(input(\\"Ingresa un nÃºmero: \\"))\\n        if es_primo(num):\\n            print(f\\"{num} es primo\\")\\n        else:\\n            print(f\\"{num} no es primo\\")\\n    except ValueError:\\n        print(\\"Por favor, ingresa un nÃºmero vÃ¡lido\\")\\n\\nif __name__ == \\"__main__\\":\\n    main()","structuredPatch":[]}}'
+Parsed hook data: {
+  "session_id": "a23d4aa3-0161-4003-a992-023601ef134d",
+  "transcript_path": "C:\\Users\\User\\.claude\\projects\\C--Users-User-Desktop-pruebas-hooks\\a23d4aa3-0161-4003-a992-023601ef134d.jsonl",
+  "cwd": "C:\\Users\\User\\Desktop\\pruebas-hooks",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "Write",
+  "tool_input": {
+    "file_path": "C:\\Users\\User\\Desktop\\pruebas-hooks\\primo.py",
+    "content": "def es_primo(numero):\n    if numero < 2:\n        return False\n    \n    for i in range(2, int(numero ** 0.5) + 1):\n        if numero % i == 0:\n            return False\n    \n    return True\n\ndef main():\n    try:\n        num = int(input(\"Ingresa un n\u00c3\u00bamero: \"))\n        if es_primo(num):\n            print(f\"{num} es primo\")\n        else:\n            print(f\"{num} no es primo\")\n    except ValueError:\n        print(\"Por favor, ingresa un n\u00c3\u00bamero v\u00c3\u00a1lido\")\n\nif __name__ == \"__main__\":\n    main()"
+  },
+  "tool_response": {
+    "type": "create",
+    "filePath": "C:\\Users\\User\\Desktop\\pruebas-hooks\\primo.py",
+    "content": "def es_primo(numero):\n    if numero < 2:\n        return False\n    \n    for i in range(2, int(numero ** 0.5) + 1):\n        if numero % i == 0:\n            return False\n    \n    return True\n\ndef main():\n    try:\n        num = int(input(\"Ingresa un n\u00c3\u00bamero: \"))\n        if es_primo(num):\n            print(f\"{num} es primo\")\n        else:\n            print(f\"{num} no es primo\")\n    except ValueError:\n        print(\"Por favor, ingresa un n\u00c3\u00bamero v\u00c3\u00a1lido\")\n\nif __name__ == \"__main__\":\n    main()",
+    "structuredPatch": []
+  }
+}
+
+--- Hook execution attempt ---
+Script: C:\Users\User\Desktop\pruebas-hooks\.claude\generate_test.py
+Args: ['C:\\Users\\User\\Desktop\\pruebas-hooks\\.claude\\generate_test.py']
+Stdin data: ''
+No input data - creating test based on recent Python file creation
+Processing latest Python file: C:\Users\User\Desktop\pruebas-hooks\primo.py
+Found functions: ['es_primo', 'main'], classes: []
+Successfully generated test file: C:\Users\User\Desktop\pruebas-hooks\tests\test_primo.py
+
+--- Hook execution attempt ---
+Script: C:\Users\User\Desktop\pruebas-hooks\.claude\generate_test.py
+Args: ['C:\\Users\\User\\Desktop\\pruebas-hooks\\.claude\\generate_test.py']
+Stdin data: '{"session_id":"cc81366e-17bb-4a81-beb9-99007ed1b60e","transcript_path":"C:\\\\Users\\\\User\\\\.claude\\\\projects\\\\C--Users-User-Desktop-pruebas-hooks\\\\cc81366e-17bb-4a81-beb9-99007ed1b60e.jsonl","cwd":"C:\\\\Users\\\\User\\\\Desktop\\\\pruebas-hooks","hook_event_name":"PostToolUse","tool_name":"Write","tool_input":{"file_path":"C:\\\\Users\\\\User\\\\Desktop\\\\pruebas-hooks\\\\sample.py","content":"def add_numbers(a, b):\\n    \\"\\"\\"Add two numbers and return the result.\\"\\"\\"\\n    return a + b\\n\\ndef multiply_numbers(a, b):\\n    \\"\\"\\"Multiply two numbers and return the result.\\"\\"\\"\\n    return a * b\\n\\nclass Calculator:\\n    \\"\\"\\"A simple calculator class.\\"\\"\\"\\n    \\n    def __init__(self):\\n        self.history = []\\n    \\n    def calculate(self, operation, a, b):\\n        \\"\\"\\"Perform a calculation and store in history.\\"\\"\\"\\n        if operation == \\"add\\":\\n            result = add_numbers(a, b)\\n        elif operation == \\"multiply\\":\\n            result = multiply_numbers(a, b)\\n        else:\\n            result = None\\n        \\n        if result is not None:\\n            self.history.append(f\\"{operation}({a}, {b}) = {result}\\")\\n        \\n        return result"},"tool_response":{"type":"create","filePath":"C:\\\\Users\\\\User\\\\Desktop\\\\pruebas-hooks\\\\sample.py","content":"def add_numbers(a, b):\\n    \\"\\"\\"Add two numbers and return the result.\\"\\"\\"\\n    return a + b\\n\\ndef multiply_numbers(a, b):\\n    \\"\\"\\"Multiply two numbers and return the result.\\"\\"\\"\\n    return a * b\\n\\nclass Calculator:\\n    \\"\\"\\"A simple calculator class.\\"\\"\\"\\n    \\n    def __init__(self):\\n        self.history = []\\n    \\n    def calculate(self, operation, a, b):\\n        \\"\\"\\"Perform a calculation and store in history.\\"\\"\\"\\n        if operation == \\"add\\":\\n            result = add_numbers(a, b)\\n        elif operation == \\"multiply\\":\\n            result = multiply_numbers(a, b)\\n        else:\\n            result = None\\n        \\n        if result is not None:\\n            self.history.append(f\\"{operation}({a}, {b}) = {result}\\")\\n        \\n        return result","structuredPatch":[]}}'
+Parsed hook data: {
+  "session_id": "cc81366e-17bb-4a81-beb9-99007ed1b60e",
+  "transcript_path": "C:\\Users\\User\\.claude\\projects\\C--Users-User-Desktop-pruebas-hooks\\cc81366e-17bb-4a81-beb9-99007ed1b60e.jsonl",
+  "cwd": "C:\\Users\\User\\Desktop\\pruebas-hooks",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "Write",
+  "tool_input": {
+    "file_path": "C:\\Users\\User\\Desktop\\pruebas-hooks\\sample.py",
+    "content": "def add_numbers(a, b):\n    \"\"\"Add two numbers and return the result.\"\"\"\n    return a + b\n\ndef multiply_numbers(a, b):\n    \"\"\"Multiply two numbers and return the result.\"\"\"\n    return a * b\n\nclass Calculator:\n    \"\"\"A simple calculator class.\"\"\"\n    \n    def __init__(self):\n        self.history = []\n    \n    def calculate(self, operation, a, b):\n        \"\"\"Perform a calculation and store in history.\"\"\"\n        if operation == \"add\":\n            result = add_numbers(a, b)\n        elif operation == \"multiply\":\n            result = multiply_numbers(a, b)\n        else:\n            result = None\n        \n        if result is not None:\n            self.history.append(f\"{operation}({a}, {b}) = {result}\")\n        \n        return result"
+  },
+  "tool_response": {
+    "type": "create",
+    "filePath": "C:\\Users\\User\\Desktop\\pruebas-hooks\\sample.py",
+    "content": "def add_numbers(a, b):\n    \"\"\"Add two numbers and return the result.\"\"\"\n    return a + b\n\ndef multiply_numbers(a, b):\n    \"\"\"Multiply two numbers and return the result.\"\"\"\n    return a * b\n\nclass Calculator:\n    \"\"\"A simple calculator class.\"\"\"\n    \n    def __init__(self):\n        self.history = []\n    \n    def calculate(self, operation, a, b):\n        \"\"\"Perform a calculation and store in history.\"\"\"\n        if operation == \"add\":\n            result = add_numbers(a, b)\n        elif operation == \"multiply\":\n            result = multiply_numbers(a, b)\n        else:\n            result = None\n        \n        if result is not None:\n            self.history.append(f\"{operation}({a}, {b}) = {result}\")\n        \n        return result",
+    "structuredPatch": []
+  }
+}
+
+--- Hook execution attempt ---
+Script: C:\Users\User\Desktop\pruebas-hooks\.claude\generate_test.py
+Args: ['C:\\Users\\User\\Desktop\\pruebas-hooks\\.claude\\generate_test.py']
+Stdin data: ''
+No input data - creating test based on recent Python file creation
+Processing latest Python file: C:\Users\User\Desktop\pruebas-hooks\sample.py
+Found functions: ['add_numbers', 'calculate', 'multiply_numbers'], classes: ['Calculator']
+Successfully generated test file: C:\Users\User\Desktop\pruebas-hooks\tests\test_sample.py
