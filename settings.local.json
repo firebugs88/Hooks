@@ -1,0 +1,50 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell:*)",
+      "Bash(python:*)",
+      "Bash(bash:*)",
+      "Bash(javascript:*)",
+      "Bash(Write:*)",
+      "python(*)",
+      "python(Write:*)",
+      "python(Generate:*)",
+      "python(Test:*)"
+
+    ],
+    "deny": []
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "<event> stop",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\User\\Desktop\\pruebas-hooks\\stop_hook.ps1\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python C:\\Users\\User\\Desktop\\pruebas-hooks\\.claude\\generate_test.py"
+          }
+        ]
+      },
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -Command \"[System.Media.SystemSounds]::Beep.Play()\""
+          }
+        ]
+      }
+    ]
+  }
+}
