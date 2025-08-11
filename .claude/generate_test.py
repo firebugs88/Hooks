@@ -105,11 +105,10 @@ def process_python_file(file_path, log_file):
         test_dir.mkdir(exist_ok=True)
         test_file_path = test_dir / f'test_{module_name}.py'
         
-        # Skip if test file already exists
+        # Check if test file already exists (log but continue to allow regeneration)
         if test_file_path.exists():
             with log_file.open('a', encoding='utf-8') as f:
-                f.write(f"Test file already exists: {test_file_path}\n")
-            return
+                f.write(f"Test file already exists, regenerating: {test_file_path}\n")
             
         # Extract functions and classes
         functions, classes = extract_functions_and_classes(file_path)
@@ -184,15 +183,14 @@ def main():
         with log_file.open('a', encoding='utf-8') as f:
             f.write(f"Parsed hook data: {json.dumps(hook_data, indent=2)}\n")
         
-        # Get the file path from the tool use data
-        tool_use = hook_data.get('tool_use', {})
-        tool_name = tool_use.get('tool_name', '')
+        # Get the file path from the hook data
+        tool_name = hook_data.get('tool_name', '')
         
-        if tool_name != 'Write':
+        if tool_name not in ['Write', 'Edit']:
             return
             
-        parameters = tool_use.get('parameters', {})
-        file_path = parameters.get('file_path', '')
+        tool_input = hook_data.get('tool_input', {})
+        file_path = tool_input.get('file_path', '')
         
         file_path_obj = Path(file_path)
         
@@ -212,9 +210,10 @@ def main():
         test_dir.mkdir(exist_ok=True)
         test_file_path = test_dir / f'test_{module_name}.py'
         
-        # Skip if test file already exists
+        # Check if test file already exists (log but continue to allow regeneration)
         if test_file_path.exists():
-            return
+            with log_file.open('a', encoding='utf-8') as f:
+                f.write(f"Test file already exists, regenerating: {test_file_path}\n")
             
         # Extract functions and classes
         functions, classes = extract_functions_and_classes(file_path)

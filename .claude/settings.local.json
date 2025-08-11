@@ -21,7 +21,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\User\\Desktop\\pruebas-hooks\\stop_hook.ps1\""
+            "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\User\\Desktop\\mis-hooks\\stop_hook.ps1\""
           }
         ]
       }
@@ -32,7 +32,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python C:\\Users\\User\\Desktop\\pruebas-hooks\\.claude\\generate_test.py"
+            "command": "python C:\\Users\\User\\Desktop\\mis-hooks\\.claude\\generate_test.py"
           }
         ]
       },
